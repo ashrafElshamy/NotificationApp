@@ -47,7 +47,7 @@
                                 <af:convertDateTime pattern="#{bindings.EmployeesView1.hints.HireDate.format}"/>
                             </af:outputText>
                         </af:column>
-                        <af:column headerText="#{bindings.EmployeesView1.hints.JobId.label}" id="c7" rendered="false">
+                        <af:column headerText="#{bindings.EmployeesView1.hints.JobId.label}" id="c7">
                             <af:outputText value="#{row.JobId}"
                                            shortDesc="#{bindings.EmployeesView1.hints.JobId.tooltip}" id="ot7"/>
                         </af:column>
