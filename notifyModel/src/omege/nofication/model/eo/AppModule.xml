@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="windows-1256" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="AppModule"
+  Version="12.2.1.12.24"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true">
+  <ViewUsage
+    Name="EmployeesView1"
+    ViewObjectName="omege.nofication.model.vo.EmployeesView"/>
+  <ViewUsage
+    Name="EmployeesView2"
+    ViewObjectName="omege.nofication.model.vo.EmployeesView"/>
+  <ViewLinkUsage
+    Name="EmpManagerFkLink1"
+    ViewLinkObjectName="omege.nofication.model.vo.EmpManagerFkLink"
+    SrcViewUsageName="omege.nofication.model.eo.AppModule.EmployeesView1"
+    DstViewUsageName="omege.nofication.model.eo.AppModule.EmployeesView2"
+    Reversed="false"/>
+</AppModule>
